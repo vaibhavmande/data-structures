@@ -48,7 +48,8 @@ describe('Stack', () => {
     expect(stack.peek()).toBe(false)
   })
 
-  it('should check if stack empty', () => {
-
+  it('should check if stack is empty', () => {
+    let stack = new Stack()
+    expect(stack.isEmpty()).toBe(true)
   })
 })
