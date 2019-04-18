@@ -4,7 +4,11 @@ export default class Stack {
   }
 
   push(item) {
-    this.arrayItems.unshift(item)
+    return this.arrayItems.unshift(item)
+  }
+
+  pop() {
+    return !this.isEmpty() ? this.arrayItems.shift() : false
   }
 
   peek() {
@@ -13,5 +17,9 @@ export default class Stack {
 
   isEmpty() {
     return !this.arrayItems.length
+  }
+
+  getItemsCount() {
+    return this.arrayItems.length
   }
 }
