@@ -12,7 +12,7 @@ export default class Stack {
   }
 
   peek() {
-    return this.arrayItems[0]
+    return this.isEmpty() ? false : this.arrayItems[0]
   }
 
   isEmpty() {
